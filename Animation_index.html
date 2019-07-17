@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS ANIMATION</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0; padding: 0;
+         font-family: 'Kaushan Script', cursive; }
+        
+	   .container
+        {
+            width: 1535px;
+            height: 390px;
+/*            border: groove;*/
+            background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/1.2.photo.jpeg);
+            background-repeat: no-repeat;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding-top: 360px;
+            
+        }
+        
+        
+        .change:after{
+                content: '';
+                animation: changetext 8s infinite linear;
+                font-size: 4rem;
+            
+        }
+        
+        @keyframes changetext{
+            0%{ content: 'UX developer'; }
+            20%{ content: 'UI developer'; }
+            40%{ content: 'developer'; }
+            60%{ content: 'sudent'; }
+            80%{ content: 'learner'; }
+            100%{ content: 'hard worker'; }
+            
+        }
+	</style>
+	 
+</head>
+<body>
+<!--    <main>-->
+    <div class="container">
+        <h1> I am a <span class="change"> </span> </h1>
+    </div>    
+    
+<!--    </main>-->
+</body>
+</html>
